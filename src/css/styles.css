@@ -1,16 +1,41 @@
-#app {
+body{
+  background: #fafafa;
+}
+.form {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
+.form-content{
+  width: 50%;
+  margin: 0 auto;
+}
+form > input{
+  margin-bottom: 20px;
+  padding: 5px 10px;
+}
 form {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 textarea {
   resize: none;
 }
+button{
+  margin-top: 20px;
+  padding: 5px 20px;
+  border: none;
+  background: #444444;
+  color: #fff;
+  cursor: pointer;
+}
 button:disabled {
   background: #ccc;
+}
+@media(max-width: 767px){
+  .form-content{
+    width: 100%;
+  }
 }

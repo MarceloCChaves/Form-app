@@ -1,12 +1,15 @@
 <template>
-  <div id="app">
-    <div v-if="!user.result">
+  <div class="form">
+    <div
+      v-if="!user.result"
+      class="form-content"
+    >
       <h1>Fazer cadastro</h1>
       <form>
         <label>Nome</label>
         <input type="text" v-model="user.name" />
         <label>Email</label>
-        <input type="text" v-model="user.email" />
+        <input type="email" v-model="user.email" />
         <label>Senha</label>
         <input type="password" v-model="user.password" />
         <label>Idade</label>
@@ -122,8 +125,6 @@
         </button>
       </form>
     </div>
-
-    <hr />
 
     <div class="item" v-show="user.result">
       <h1>Informações</h1>
